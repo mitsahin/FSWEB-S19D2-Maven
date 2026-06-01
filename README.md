@@ -7,6 +7,23 @@ Daha sonra projeyi IntellijIDEA kullanarak açınız. README.md dosyasını dikk
 Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projelerimizi belli klasör kalıplarında saklamak işimizi kolaylaştırmak adına iyi bir alışkanlıktır.
 Örnek bir Lokasyon: Workintech/Sprint_1/Etud.
 
+### Gereksinimler (Java 17)
+
+Bu proje **Java 17** ile geliştirilmelidir. IntelliJ IDEA'da aşağıdaki ayarların hepsinin **17** olduğundan emin olun:
+
+* **File → Project Structure → Project:** SDK ve Language level = `17`
+* **File → Settings → Build Tools → Maven → Importing:** JDK for importer = `17`
+* **File → Settings → Build Tools → Maven → Runner:** JRE = `17`
+
+JDK 24 veya daha yeni sürümlerle derleme yapılırsa Lombok kaynaklı `TypeTag :: UNKNOWN` hatası alınabilir.
+
+Maven ile derlemek için:
+
+```bash
+./mvnw test
+./mvnw spring-boot:run
+```
+
 ### Hedeflerimiz:
 
 ### Banking Rest Api
